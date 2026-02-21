@@ -26,6 +26,11 @@
             android:name=".MainActivity"
             android:exported="true" />
 
+        <!-- Signup Activity -->
+        <activity
+            android:name=".activities.SignupActivity"
+            android:exported="true" />
+
         <!-- Other app activities -->
         <activity
             android:name=".activities.WatchlistActivity"

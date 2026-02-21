@@ -22,7 +22,6 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,23 +47,23 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Login Subtitle -->
+            <!-- Signup Subtitle -->
             <TextView
-                android:id="@+id/login_subtitle"
+                android:id="@+id/signup_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/login_subtitle"
+                android:text="@string/signup_subtitle"
                 android:textSize="14sp"
                 android:textColor="@color/text_secondary"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="48dp"
                 android:textAlignment="center" />
 
-            <!-- Welcome Text -->
+            <!-- Create Account Text -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome Back"
+                android:text="Create Account"
                 android:textSize="28sp"
                 android:textStyle="bold"
                 android:textColor="@color/accent_yellow"
@@ -74,10 +73,26 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jump back right in"
+                android:text="Get started with ReelMate"
                 android:textSize="14sp"
                 android:textColor="@color/text_secondary"
                 android:layout_marginBottom="32dp" />
+
+            <!-- Full Name Input -->
+            <EditText
+                android:id="@+id/name_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/name_hint"
+                android:inputType="text"
+                android:autofillHints="name"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/edit_text_background_dark"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
 
             <!-- Email Input -->
             <EditText
@@ -106,33 +121,38 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
                 android:background="@drawable/edit_text_background_dark"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_hint" />
+
+            <!-- Confirm Password Input -->
+            <EditText
+                android:id="@+id/confirm_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="@string/confirm_password_hint"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:background="@drawable/edit_text_background_dark"
                 android:layout_marginBottom="24dp"
                 android:textSize="14sp"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_hint" />
 
-            <!-- Login Button -->
+            <!-- Signup Button -->
             <Button
-                android:id="@+id/login_button"
+                android:id="@+id/signup_button"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
-                android:text="@string/login_button"
+                android:text="@string/signup_button"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 android:textColor="@color/primary_dark"
                 android:background="@drawable/button_yellow_bg"
-                android:layout_marginBottom="16dp" />
-
-            <!-- Forgot Password Link -->
-            <TextView
-                android:id="@+id/forgot_password_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/forgot_password"
-                android:textColor="@color/accent_yellow"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="32dp"
-                android:textSize="12sp" />
+                android:layout_marginBottom="24dp" />
 
             <!-- Divider -->
             <View
@@ -141,27 +161,26 @@
                 android:background="@color/edit_text_border"
                 android:layout_marginBottom="24dp" />
 
-            <!-- Sign Up Section -->
+            <!-- Back to Login Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginBottom="16dp">
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Haven't signed up yet?"
+                    android:text="Already have an account?"
                     android:textColor="@color/text_secondary"
                     android:textSize="13sp"
                     android:layout_marginEnd="8dp" />
 
                 <TextView
-                    android:id="@+id/register_button"
+                    android:id="@+id/back_to_login_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/register_button"
+                    android:text="@string/back_to_login"
                     android:textColor="@color/accent_yellow"
                     android:textSize="13sp"
                     android:textStyle="bold"
@@ -171,7 +190,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
     </ScrollView>
 
 </FrameLayout>
