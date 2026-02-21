@@ -29,17 +29,27 @@ public class ValidationUtil {
     }
 
     /**
-     * Validate username
-     * Username must be 3-20 characters and alphanumeric
+     * Validate full name
+     * Name must be at least 2 characters long
      */
-    public static boolean isValidUsername(String username) {
-        if (username == null || username.isEmpty()) {
+    public static boolean isValidName(String name) {
+        if (name == null || name.isEmpty()) {
             return false;
         }
-        if (username.length() < 3 || username.length() > 20) {
-            return false;
+        return name.length() >= 2;
+    }
+
+    /**
+     * Get error message for name validation
+     */
+    public static String getNameErrorMessage(String name) {
+        if (name == null || name.isEmpty()) {
+            return "Name cannot be empty";
         }
-        return username.matches("^[a-zA-Z0-9_]+$");
+        if (name.length() < 2) {
+            return "Name must be at least 2 characters";
+        }
+        return "";
     }
 
     /**

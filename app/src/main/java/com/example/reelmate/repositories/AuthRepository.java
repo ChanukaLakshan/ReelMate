@@ -12,12 +12,12 @@ public class AuthRepository {
 
     /**
      * Register a new user
+     * @param name User full name
      * @param email User email
      * @param password User password
-     * @param username User username
      * @param callback Callback for registration result
      */
-    public void registerUser(String email, String password, String username, AuthCallback callback) {
+    public void registerUser(String name, String email, String password, AuthCallback callback) {
         Log.d(TAG, "Registering user: " + email);
         
         // TODO: Implement registration logic

@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- ReelMate Theme Colors -->
+    <!-- ReelMate Theme Colors - Night Mode -->
     <color name="primary_dark">#1A1A1A</color>
     <color name="primary_darker">#0F0F0F</color>
     <color name="accent_yellow">#FFD700</color>
@@ -16,3 +16,4 @@
     <color name="error_red">#FF5252</color>
     <color name="success_green">#4CAF50</color>
 </resources>
+

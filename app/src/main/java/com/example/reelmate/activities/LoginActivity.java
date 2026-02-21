@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.reelmate.MainActivity;
@@ -25,7 +26,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText emailEditText;
     private EditText passwordEditText;
     private Button loginButton;
-    private Button registerButton;
+    private TextView registerButton;
     private LoginViewModel loginViewModel;
 
     @Override
@@ -110,9 +111,8 @@ public class LoginActivity extends AppCompatActivity {
         });
 
         registerButton.setOnClickListener(v -> {
-            // TODO: Navigate to RegisterActivity when it's created
             Log.d(TAG, "Register button clicked");
-            showMessage("Register feature coming soon!");
+            navigateToSignupActivity();
         });
     }
 
@@ -124,6 +124,14 @@ public class LoginActivity extends AppCompatActivity {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
         finish();
+    }
+
+    /**
+     * Navigate to SignupActivity
+     */
+    private void navigateToSignupActivity() {
+        Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+        startActivity(intent);
     }
 
     /**

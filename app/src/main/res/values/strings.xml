@@ -4,12 +4,19 @@
     <!-- Login Screen -->
     <string name="login_title">Welcome to ReelMate</string>
     <string name="login_subtitle">Your Movie Watchlist &amp; Review App</string>
-    <string name="email_hint">Enter your email</string>
-    <string name="password_hint">Enter your password</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
     <string name="login_button">Login</string>
-    <string name="register_button">Create Account</string>
-    <string name="forgot_password">Forgot Password?</string>
-    
+    <string name="register_button">Sign Up</string>
+    <string name="forgot_password">Forgot your password?</string>
+
+    <!-- Signup Screen -->
+    <string name="signup_subtitle">Join ReelMate and start reviewing movies</string>
+    <string name="name_hint">Full Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="signup_button">Create Account</string>
+    <string name="back_to_login">Sign In</string>
+
     <!-- Watchlist Screen -->
     <string name="watchlist_title">My Watchlist</string>
     <string name="add_movie">Add Movie</string>
