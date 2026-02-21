@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Review Title -->
+    <TextView
+        android:id="@+id/review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/review_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Movie Title -->
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Rating Label -->
+    <TextView
+        android:id="@+id/rating_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating_label"
+        android:textSize="14sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Rating Bar (RatingBar placeholder) -->
+    <TextView
+        android:id="@+id/rating_placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TODO: Implement RatingBar for ratings"
+        android:textSize="12sp"
+        android:textColor="#999999"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Review Text -->
+    <EditText
+        android:id="@+id/review_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/review_text_hint"
+        android:gravity="top|start"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp" />
+
+    <!-- Submit Review Button -->
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/submit_review"
+        android:textSize="16sp" />
+
+    <!-- Reviews List (RecyclerView placeholder) -->
+    <TextView
+        android:id="@+id/reviews_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TODO: Implement RecyclerView for reviews list"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#999999"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

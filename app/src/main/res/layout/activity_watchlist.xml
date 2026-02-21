@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Watchlist Title -->
+    <TextView
+        android:id="@+id/watchlist_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/watchlist_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/search_movies"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:textSize="14sp" />
+
+    <!-- Movies List (RecyclerView placeholder) -->
+    <TextView
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TODO: Implement RecyclerView for movies list"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#999999" />
+
+</LinearLayout>

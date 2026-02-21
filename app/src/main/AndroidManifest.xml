@@ -11,15 +11,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ReelMate">
+        <!-- LoginActivity is the new launcher (starting) activity -->
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Keep MainActivity declared but not as launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <!-- Other app activities -->
+        <activity
+            android:name=".activities.WatchlistActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activities.ReviewActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
